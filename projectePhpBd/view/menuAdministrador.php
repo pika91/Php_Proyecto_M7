@@ -29,13 +29,7 @@
       <?php
       session_start();
 
-      function __autoload($class_name) {
-      //include 'model/BussinessLayer/class_'.$nombre_clase.'.php';
-        require_once("../model/BussinessLayer/class_" . $class_name . ".php"); 
-      }
-      $projectes = unserialize($_SESSION['empresa']);
-      $entorn = $projectes->getEntornProjecte();
-
+      include "../config/populate.inc.php";
       include "../controller/comprovarSessio.php";
       if(comprovarSessio()){
         ?>
@@ -129,61 +123,84 @@
          <h3><i class="fa fa-angle-right"></i> Benvingut</h3>
          <div class="row mt">
           <div class="col-lg-12">
-            <p>Crear Projecte </p>
-            <form name="form" method="post" action="../controller/controllerCrearProjecte.php"/>
-              Codi del projecte <input type="text" name="codi" required/><br/>
-              Descripcio curta <input type="text" name="descCurta" required/><br/>
-              Descripcio llarga <textarea name="descLlarga" rows="5" cols="20" required></textarea><br/>
-              Entorn : 
-            <select name="entornId">
-              <?php
+            <p>Projectes Actius</p>
+            <?php    
+            $projectes = unserialize($_SESSION['empresa']);
+            $projecte = $projectes->getProjecte();
+            $entorn = $projectes->getEntornProjecte();
+            ?>
+            <table border='1' cellpadding='2' cellspacing='2'>
+              <tr>
+                <td>Id</td>
+                <td>Descripció curta</td>
+                <td>Descripció llarga</td>
+                <td>Entorn id</td>
+              </tr>
+            <?php
+              foreach ($projecte as $value) {                       
+            ?>            
+              <tr>
+                <td> <?php echo $value->getCodiProjecte(); ?></td>
+                <td> <?php echo $value->getDescripcioCurta();?></td>
+                <td> <?php echo $value->getDescripcioLlarga();?></td>
+                <td> <?php echo $value->getEntorn();?></td>
+              </tr>
+            <?php  
+            }
+            ?>            
+            </table><br>
+            <p>Entorns Actius</p>
+            <table border='1' cellpadding='2' cellspacing='2'>
+              <tr>
+                <td>Id</td>
+                <td>Descripció</td>
+                
+              </tr>
+            <?php
               foreach ($entorn as $value) {                       
-                ?>            
-                <option value="<?php echo $value->getCodiEntorn(); ?>" selected="selected"><?php echo $value->getDescripcioEntorn();?></option>
-                <?php  
-              }
-              ?>
-            </select>
-            <br>    
-
-            <input type="submit" value="Crear projecte" name="crearProjecte"/>
-          </form>
-
+            ?>            
+              <tr>
+                <td> <?php echo $value->getCodiEntorn(); ?></td>
+                <td> <?php echo $value->getDescripcioEntorn();?></td>
+              </tr>
+            <?php  
+            }
+            ?>
+            </table>
+          </div>
         </div>
-      </div>
 
-    </section><! --/wrapper -->
-  </section><!-- /MAIN CONTENT -->
+      </section><! --/wrapper -->
+    </section><!-- /MAIN CONTENT -->
 
-  <!--main content end-->
-  <!--footer start-->
-  <footer class="site-footer">
-    <div class="text-center">
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
       Gestio de projectes
       <a href="menuAdministrador.php" class="go-top">
         <i class="fa fa-angle-up"></i>
       </a>
-    </div>
-  </footer>
-  <!--footer end-->
-</section>
+    </div>    </footer>
+    <!--footer end-->
+  </section>
 
-<!-- js placed at the end of the document so the pages load faster -->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-<script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="assets/js/jquery.scrollTo.min.js"></script>
-<script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+  <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="assets/js/jquery.scrollTo.min.js"></script>
+  <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
 
-<!--common script for all pages-->
-<script src="assets/js/common-scripts.js"></script>
+  <!--common script for all pages-->
+  <script src="assets/js/common-scripts.js"></script>
 
-<!--script for this page-->
+  <!--script for this page-->
 
-<script>
+  <script>
       //custom select box
 
       $(function(){

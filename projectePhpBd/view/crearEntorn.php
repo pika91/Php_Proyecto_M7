@@ -10,13 +10,13 @@
   <title>Gestió Projectes  - Administrador</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
   <!--external css-->
-  <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link href="../assets/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -64,11 +64,11 @@
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
 
-           <p class="centered"><a href="profile.html"><img src="../assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+           <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
            <h5 class="centered">Administrador</h5>
 
            <li class="mt">
-            <a href="administrador1.php">
+            <a href="menuAdministrador.php">
               <i class="fa fa-dashboard"></i>
               <span>Panell de control</span>
             </a>
@@ -141,7 +141,7 @@
   <footer class="site-footer">
     <div class="text-center">
       Gestio de projectes
-      <a href="administrador1.php" class="go-top">
+      <a href="menuAdministrador.php" class="go-top">
         <i class="fa fa-angle-up"></i>
       </a>
     </div>
@@ -150,17 +150,17 @@
 </section>
 
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="../assets/js/jquery.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-<script src="../assets/js/jquery.ui.touch-punch.min.js"></script>
-<script class="include" type="text/javascript" src="../assets/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="../assets/js/jquery.scrollTo.min.js"></script>
-<script src="../assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
 
 <!--common script for all pages-->
-<script src="../assets/js/common-scripts.js"></script>
+<script src="assets/js/common-scripts.js"></script>
 
 <!--script for this page-->
 

@@ -22,9 +22,9 @@ if (isset($_POST['enviar'])) {
        		}
 
 			if($usuari == 'admin') {
-				header("Location:../view/administrador1.php");
+				header("Location:../view/menuAdministrador.php");
 			} else {
-				header("Location:../view/treballador.php");
+				header("Location:../view/menuTreballador.php");
 			}
 
 		} else {
