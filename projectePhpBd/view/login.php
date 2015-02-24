@@ -19,20 +19,6 @@
     $guardaPwd = "checked";
   }
 
-  function __autoload($class_name) {
-      //include 'model/BussinessLayer/class_'.$nombre_clase.'.php';
-      require_once("../model/BussinessLayer/class_" . $class_name . ".php"); 
-  }
-
-  //require_once("../model/BussinessLayer/class_Empresa.php");
-
-  
-  $objecteEntorn = new Empresa('0',"Aidet","Carrer pedres blanques", "969626325", "954623014");
-  $objecteEntorn->populateEmpresa();
-  $_SESSION['empresa'] = serialize($objecteEntorn);
-  
-
-
 ?>
 <html lang="en">
   <head>
@@ -44,6 +30,7 @@
 
     <title>Login - Gestio de projectes</title>
 
+    <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />

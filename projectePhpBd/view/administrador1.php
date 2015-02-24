@@ -29,12 +29,9 @@
       <?php
       session_start();
 
-      function __autoload($class_name) {
-      //include 'model/BussinessLayer/class_'.$nombre_clase.'.php';
-        require_once("../model/BussinessLayer/class_" . $class_name . ".php"); 
-      }
-
+      include "../config/populate.inc.php";
       include "../controller/comprovarSessio.php";
+      
       if(comprovarSessio()){
         ?>
 
@@ -174,7 +171,7 @@
           </div>
         </div>
 
-      </section><! --/wrapper -->
+      </section><!--/wrapper -->
     </section><!-- /MAIN CONTENT -->
 
     <!--main content end-->

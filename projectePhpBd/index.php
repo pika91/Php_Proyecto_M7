@@ -15,7 +15,7 @@
 <body>
 <h1>Menú</h1>
 <h3>Què vols fer?</h3>
-
+<!-- <input type=button onClick="parent.location='./view/login.php'" value='Log-In'> -->
 <a class="btn btn-default" href="./view/login.php">Log-In</a>
 </body>
 </html>
