@@ -45,11 +45,11 @@
           <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
         </div>
         <!--logo start-->
-        <a href="index.html" class="logo"><b>GESTIO DE PROJECTES</b></a>
+        <a href="menuAdministrador.php" class="logo"><b>GESTIO DE PROJECTES</b></a>
         <!--logo end-->
         <div class="top-menu">
          <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="login.php">Logout</a></li>
+          <li><a class="logout" href="logout.php">Logout</a></li>
         </ul>
       </div>
     </header>
@@ -106,7 +106,7 @@
               <span>Usuari</span>
             </a>
             <ul class="sub">
-              <li><a  href="login.php">Logout</a></li>
+              <li><a  href="logout.php">Logout</a></li>
             </ul>
           </li>
         </ul>
