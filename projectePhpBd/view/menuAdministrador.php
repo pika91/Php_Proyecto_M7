@@ -44,11 +44,11 @@
           <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
         </div>
         <!--logo start-->
-        <a href="index.html" class="logo"><b>GESTIO DE PROJECTES</b></a>
+        <a href="menuAdministrador.php" class="logo"><b>GESTIO DE PROJECTES</b></a>
         <!--logo end-->
         <div class="top-menu">
          <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="login.php">Logout</a></li>
+          <li><a class="logout" href="logout.php">Logout</a></li>
         </ul>
       </div>
     </header>
@@ -63,7 +63,7 @@
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
 
-           <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+           <p class="centered"><a href="profile.html"><img src="assets/img/logo_projecte.png" class="img-circle" width="60"></a></p>
            <h5 class="centered">Administrador</h5>
 
            <li class="mt">
@@ -105,7 +105,7 @@
               <span>Usuari</span>
             </a>
             <ul class="sub">
-              <li><a  href="login.php">Logout</a></li>
+              <li><a  href="logout.php">Logout</a></li>
             </ul>
           </li>
         </ul>
