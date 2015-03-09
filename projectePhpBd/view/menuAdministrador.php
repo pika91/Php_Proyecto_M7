@@ -149,6 +149,7 @@
             }
             ?>            
             </table><br>
+            <a href="imprimirProjectes.php"><button>Imprimir PDF de projectes</button></a>
             <p>Entorns Actius</p>
             <table border='1' cellpadding='2' cellspacing='2'>
               <tr>
