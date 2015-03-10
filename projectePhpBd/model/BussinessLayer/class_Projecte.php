@@ -51,9 +51,10 @@ require_once("../model/DAO/class_projectedb.php");
 		public function setEntorn($entornProjecte){
 			$this->entorn = $entornProjecte;
 		}
+		
 		public function afegirProjecte(){		
-		$projecteDb = new projectedb();
-		$projecteDb->inserir($this);		
+			$projecteDb = new projectedb();
+			$projecteDb->inserir($this);		
 		}
 	}
 ?>

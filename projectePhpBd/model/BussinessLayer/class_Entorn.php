@@ -32,8 +32,8 @@ require_once("../model/DAO/class_entorndb.php");
 		}
 
 		public function afegirEntorn(){		
-		$entornDB = new entorndb();
-		$entornDB->inserir($this);		
+			$entornDB = new entorndb();
+			$entornDB->inserir($this);		
 		}
 
 	}

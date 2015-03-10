@@ -57,5 +57,10 @@
 			$this->tipusTreballador = $tipusTreballador;
 		}
 
+		public function afegirTreballador(){		
+			$treballadorDb = new treballadordb();
+			$treballadordb->inserir($this);
+		}
+
 	}
 ?>
