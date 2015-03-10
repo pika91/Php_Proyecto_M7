@@ -1,4 +1,5 @@
 <?php
+require_once("../model/DAO/class_tipustascadb.php");
 
 	class TipusTasca {
 		/*
@@ -29,6 +30,11 @@
 
 		public function setDescripcioTipusTasca($descripcioTipusTasca){
 			$this->descripcioTipusTasca = $descripcioTipusTasca;
+		}
+
+		public function afegirTipusTasca(){		
+			$tipusTascaDB = new tipustascadb();
+			$tipusTascaDB->inserir($this);		
 		}
 
 	}

@@ -81,9 +81,9 @@
             <ul class="sub">
               <li><a  href="crearTasca.php">Crear Tasca</a></li>
               <li><a  href="buttons.html">Modificar Tasca</a></li>
-              <li><a  href="panels.html">Agregar Tasca</a></li>
-              <li><a  href="panels.html">Agregar Tasca</a></li>
-              <li><a  href="panels.html">Agregar Tasca</a></li>
+              <li><a  href="panels.html">Assignar Tasca</a></li>
+              <li><a  href="panels.html">Crear Tipus Tasca</a></li>
+              <li><a  href="panels.html">Modificar Tipus Tasca</a></li>
             </ul>
           </li>
 
@@ -95,8 +95,8 @@
             <ul class="sub">
               <li><a  href="crearProjecte.php">Crear Projecte</a></li>
               <li><a  href="gallery.html">Modificar Projecte</a></li>
-              <li><a  href="crearEntorn.php">Crear Entotrn </a></li>
-              <li><a  href="todo_list.html">Modificar Entotrn </a></li>
+              <li><a  href="crearEntorn.php">Crear Entorn </a></li>
+              <li><a  href="todo_list.html">Modificar Entorn </a></li>
             </ul>
           </li>
           <li class="sub-menu">
