@@ -10,6 +10,7 @@
 		1: Usuari normal, treballador.
 		Si cal, anirem afegint més numeros segons els tipus de treballadors que hi puguin haver. Haurem de crear una nova classe.
 		----------------------------------
+		NOTA: Treballador = Usuari
 		*/
 
 		private $NIF = null;

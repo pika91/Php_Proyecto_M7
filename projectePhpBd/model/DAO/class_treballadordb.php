@@ -11,5 +11,6 @@ class treballadordb{
 		$con->consulta($query, $GLOBALS['bd']);
 		$con->close();
 	} 
+
 }    
 ?>
