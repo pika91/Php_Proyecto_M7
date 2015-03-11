@@ -79,7 +79,7 @@
               <span>Tasques</span>
             </a>
             <ul class="sub">
-              <li><a  href="crearTasca.php">Crear Tasca</a></li>
+              <li><a  href="crear_Tasca.php">Crear Tasca</a></li>
               <li><a  href="buttons.html">Modificar Tasca</a></li>
               <li><a  href="panels.html">Assignar Tasca</a></li>
               <li><a  href="panels.html">Crear Tipus Tasca</a></li>
@@ -93,9 +93,9 @@
               <span>Projectes</span>
             </a>
             <ul class="sub">
-              <li><a  href="crearProjecte.php">Crear Projecte</a></li>
+              <li><a  href="crear_Projecte.php">Crear Projecte</a></li>
               <li><a  href="gallery.html">Modificar Projecte</a></li>
-              <li><a  href="crearEntorn.php">Crear Entorn </a></li>
+              <li><a  href="crear_Entorn.php">Crear Entorn </a></li>
               <li><a  href="todo_list.html">Modificar Entorn </a></li>
             </ul>
           </li>
