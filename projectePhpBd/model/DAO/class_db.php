@@ -76,9 +76,7 @@ class class_db implements interface_db{
 	public function consulta($query, $pBD){		
 		$con= $this->connect();
 		$this->bd($pBD);
-		return mysql_query($query, $con) ;//or die('Error, query failed: '.$this->error());
-
-		
+		return mysql_query($query, $con) ;//or die('Error, query failed: '.$this->error());		
 		
 	}
 }

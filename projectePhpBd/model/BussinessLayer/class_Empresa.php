@@ -15,7 +15,7 @@ class Empresa {
 		*/
 		private $CIF = null;
 		private $nomEmpresa = null;
-		private $adreca = null;
+		private $adreca = null
 		private $fax = null;
 		private $numTelefon = null;
 		private $projecte = null;
@@ -123,8 +123,8 @@ class Empresa {
 			$projecte->afegirProjecte();
 		}
 
-		public function inserirTreballador($NIF, $nom, $cognom, $tipusTreballador) {
-			$treballador = new Treballador($NIF, $nom, $cognom, $tipusTreballador);
+		public function inserirTreballador($NIF, $nom, $cognom, $tipusTreballador, $usuari, $password) {
+			$treballador = new Treballador($NIF, $nom, $cognom, $tipusTreballador, $usuari, $password);
 			array_push($this->treballador, $treballador);
 		}
 

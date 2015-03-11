@@ -10,22 +10,24 @@
 		1: Usuari normal, treballador.
 		Si cal, anirem afegint més numeros segons els tipus de treballadors que hi puguin haver. Haurem de crear una nova classe.
 		----------------------------------
-		NOTA: Treballador = Usuari
+		Data: Dimecres 11 - 03 - 2015
+		Nota: S'afegeix usuari
+		----------------------------------
 		*/
 
 		private $NIF = null;
 		private $nom = null;
 		private $cognom = null;
 		private $tipusTreballador = null;
+		private $usuari = null;
 
-		public function __construct($NIF, $nom, $cognom, $tipusTreballador) {
+		public function __construct($NIF, $nom, $cognom, $tipusTreballador, $usuari) {
 			$this->NIF=$NIF;			
 			$this->nom=$nom;
 			$this->cognom=$cognom;
 			$this->tipusTreballador=$tipusTreballador;
+			$this->usuari=$usuari;
 		}
-		
-
 		public function getNIF(){
 			return $this->NIF;
 		}
@@ -56,6 +58,14 @@
 
 		public function setTipusTreballador($tipusTreballador){
 			$this->tipusTreballador = $tipusTreballador;
+		}
+
+		public function getUsuari(){
+			return $this->usuari;
+		}
+
+		public function setUsuari($usuari){
+			$this->usuari= $usuari;
 		}
 
 		public function afegirTreballador(){		
