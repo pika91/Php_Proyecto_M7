@@ -17,7 +17,7 @@
   <!-- Custom styles for this template -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style-responsive.css" rel="stylesheet">
-
+      
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,6 +37,13 @@
       $entorn = $projectes->getEntornProjecte();
 
       include "../controller/comprovarSessio.php";
+      //include "../controller/funcio_ExtreureAccio .php";
+
+      $fitxer = basename($_SERVER['PHP_SELF']);
+	  $pieces = explode( "_", $fitxer);  // 2012 substitució de la funció obsoleta split per explode
+	  $accio = $pieces[0];
+	  echo $accio;
+
       if(comprovarSessio()){
         ?>
 
@@ -50,11 +57,11 @@
           <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
         </div>
         <!--logo start-->
-        <a href="menuAdministrador.php" class="logo"><b>GESTIO DE PROJECTES</b></a>
+        <a href="menuAdministrador.php" onClick="return avisar('<?php echo $accio; ?>');" class="logo"><b>GESTIO DE PROJECTES</b></a>
         <!--logo end-->
         <div class="top-menu">
          <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="logout.php">Logout</a></li>
+          <li><a class="logout" href="logout.php" onClick="return avisar('<?php echo $accio; ?>');">Logout</a></li>
         </ul>
       </div>
     </header>
@@ -69,11 +76,11 @@
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
 
-           <p class="centered"><a href="profile.html"><img src="assets/img/logo_projecte.png" class="img-circle" width="60"></a></p>
+           <p class="centered"><a href="profile.html" onClick="return avisar('<?php echo $accio; ?>');"><img src="assets/img/logo_projecte.png" class="img-circle" width="60"></a></p>
            <h5 class="centered">Administrador</h5>
 
            <li class="mt">
-            <a href="menuAdministrador.php">
+            <a href="menuAdministrador.php" onClick="return avisar('<?php echo $accio; ?>');">
               <i class="fa fa-dashboard"></i>
               <span>Panell de control</span>
             </a>
@@ -85,11 +92,11 @@
               <span>Tasques</span>
             </a>
             <ul class="sub">
-              <li><a  href="crearTasca.php">Crear Tasca</a></li>
-              <li><a  href="buttons.html">Modificar Tasca</a></li>
-              <li><a  href="panels.html">Agregar Tasca</a></li>
-              <li><a  href="panels.html">Agregar Tasca</a></li>
-              <li><a  href="panels.html">Agregar Tasca</a></li>
+              <li><a  href="crearTasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tasca</a></li>
+              <li><a  href="buttons.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Tasca</a></li>
+              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');">Agregar Tasca</a></li>
+              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');">Agregar Tasca</a></li>
+              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');" >Agregar Tasca</a></li>
             </ul>
           </li>
 
@@ -99,10 +106,10 @@
               <span>Projectes</span>
             </a>
             <ul class="sub">
-              <li><a  href="crearProjecte.php">Crear Projecte</a></li>
-              <li><a  href="gallery.html">Modificar Projecte</a></li>
-              <li><a  href="crearEntorn.php">Crear Entotrn </a></li>
-              <li><a  href="todo_list.html">Modificar Entotrn </a></li>
+              <li><a  href="crearProjecte.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Projecte</a></li>
+              <li><a  href="gallery.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Projecte</a></li>
+              <li><a  href="crearEntorn.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Entotrn </a></li>
+              <li><a  href="todo_list.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Entotrn </a></li>
             </ul>
           </li>
           <li class="sub-menu">
@@ -111,7 +118,7 @@
               <span>Usuari</span>
             </a>
             <ul class="sub">
-              <li><a  href="logout.php">Logout</a></li>
+              <li><a  href="logout.php" onClick="return avisar('<?php echo $accio; ?>');">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -176,6 +183,7 @@
 <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="assets/js/jquery.scrollTo.min.js"></script>
 <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/confirmar_Sortida.js"></script>
 
 
 <!--common script for all pages-->
