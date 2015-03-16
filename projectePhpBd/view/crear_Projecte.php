@@ -42,7 +42,7 @@
       $fitxer = basename($_SERVER['PHP_SELF']);
 	  $pieces = explode( "_", $fitxer);  // 2012 substitució de la funció obsoleta split per explode
 	  $accio = $pieces[0];
-	  echo $accio;
+	  //echo $accio;
 
       if(comprovarSessio()){
         ?>

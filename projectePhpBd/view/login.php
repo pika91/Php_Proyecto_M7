@@ -66,7 +66,7 @@ if (isset($_COOKIE['password'])){
               <input type="checkbox" name="guardaPwd" value="checked" <?php print $guardaPwd; ?>> Guardar contrasenya<br/>
               <input type="submit" value="Log-in" name="enviar"/>		            
               <hr>
-            <div class="g-recaptcha" data-sitekey="6LdvjAMTAAAAAF4aw6fPd1dZSNGU9Yj1WFcCh7pI"></div>
+            <div class="g-recaptcha" data-sitekey="6Lf_lAMTAAAAABMOmQDZf-ORD8GmuJ3bWeLYdynv"></div>
             </div>
 
           </form>	
