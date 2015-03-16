@@ -15,7 +15,7 @@ class Empresa {
 		*/
 		private $CIF = null;
 		private $nomEmpresa = null;
-		private $adreca = null
+		private $adreca = null;
 		private $fax = null;
 		private $numTelefon = null;
 		private $projecte = null;

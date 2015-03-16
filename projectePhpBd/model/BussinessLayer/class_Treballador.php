@@ -28,6 +28,7 @@
 			$this->tipusTreballador=$tipusTreballador;
 			$this->usuari=$usuari;
 		}
+
 		public function getNIF(){
 			return $this->NIF;
 		}
@@ -68,7 +69,7 @@
 			$this->usuari= $usuari;
 		}
 
-		public function afegirTreballador(){		
+		public function afegirTreballador() {
 			$treballadorDb = new treballadordb();
 			$treballadordb->inserir($this);
 		}

@@ -1,9 +1,9 @@
 <?php
 	function comprovarSessio() {
-		$existeixSessio = false;
 		if(isset($_SESSION['sessio'])) {
-			$existeixSessio = true;
+			return true;
+		} else {
+			header("Location:../view/login.php");
 		}
-		return $existeixSessio;
 	}
 ?>

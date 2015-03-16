@@ -10,15 +10,6 @@ class treballadordb{
 		$con = new class_db();
 		$con->consulta($query, $GLOBALS['bd']);
 		$con->close();
-	} 
-
-	public function consultaUsuari($treballador) {
-		$query = "SELECT * FROM treballador WHERE user = ".$treballador->getNom()." AND password = "md5($treballador->getPassword())";";
-		$con = new class_db();
-		$result = $con->consulta($query, $GLOBALS['bd']);
-		$con->close();
-		return 
 	}
-
-}    
+}
 ?>

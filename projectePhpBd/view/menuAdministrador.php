@@ -212,10 +212,6 @@
     <!-- Si no te acces a la pagina el redirigim -->
     <?php
     $_SESSION['empresa'] = serialize($projectes);
-  } else {
-
-    header('Location: ./error/accessDenegat.html');
-
   }
   ?>
 
