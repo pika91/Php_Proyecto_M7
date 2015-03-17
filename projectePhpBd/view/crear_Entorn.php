@@ -125,8 +125,7 @@
          <div class="row mt">
           <div class="col-lg-12">
             <form name="form" method="post" action="../controller/controllerCrearEntorn.php"/>
-              Codi Entorn:  <input type="text" name="codi" required/><br/>
-              Descripcio :  <input type="text" name="desc" required/><br/>
+               Descripcio :  <input type="text" name="desc" required/><br/>
             <input type="submit" value="Crear Entorn" name="crearEntorn"/>
           </form>
 

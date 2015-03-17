@@ -138,7 +138,6 @@
           <div class="col-lg-12">
             <p>Crear Projecte </p>
             <form name="form" method="post" action="../controller/controllerCrearProjecte.php"/>
-              Codi del projecte <input type="text" name="codi" required/><br/>
               Descripcio curta <input type="text" name="descCurta" required/><br/>
               Descripcio llarga <textarea name="descLlarga" rows="5" cols="20" required></textarea><br/>
               Entorn : 
