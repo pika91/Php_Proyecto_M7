@@ -13,8 +13,7 @@
 		private $dataFinal = null;
 		private $horesDedicades = null;
 
-		public function __construct($codiTasca, $tipusTasca, $descripcioTasca, $dataInici) {
-			$this->codiTasca=$codiTasca;
+		public function __construct($tipusTasca, $descripcioTasca, $dataInici) {
 			$this->tipusTasca=$tipusTasca;
 			$this->descripcio=$descripcioTasca;
 			$this->dataInici=$dataInici;

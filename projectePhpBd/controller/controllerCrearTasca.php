@@ -4,15 +4,13 @@
 	function __autoload($nombre_clase) {
     	include '../model/BussinessLayer/class_'.$nombre_clase.'.php';
 	}
-
-	$codiTasca = $_POST['codi'];
 	$descripcioTasca = $_POST['desc'];
 	$dataInici = $_POST['dataInici'];
 
 	$novaTasca = unserialize($_SESSION['empresa']);
 
 	//Com que no estem segurs de com mostrar i seleccionar el valor de un tipus de tasca en un dropdown menu, crearem i utilitzarem un de testeig
-	$tipusTascaTesting = $novaTasca->inserirTipusTasca(5,'Arreglar error cookie');
+	$tipusTascaTesting = $novaTasca->inserirTipusTasca(5,$descripcioTasca,$dataInici);
 
 	if ($codiTasca == "" || $descripcioTasca == "" || $dataInici == "") {
 		header('Location: ../view/error/formulariBuit.html');
