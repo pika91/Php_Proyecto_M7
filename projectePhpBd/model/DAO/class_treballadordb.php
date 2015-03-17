@@ -6,7 +6,7 @@ class treballadordb{
 
 	public function inserir($treballador) {		
 	
-		$query="insert into treballador values('".$treballador->getNIF()."', '".$treballador->getNom()."', '".$treballador->getCognom()."', '".$treballador->getTipusTreballador()."', ".$treballador->getUsuari()."', '".md5($treballador->getPassword())."');";	
+		$query="insert into treballador values('', '".$treballador->getNIF()."', '".$treballador->getNom()."', '".$treballador->getCognom()."', '".$treballador->getTipusTreballador()."', ".$treballador->getUsuari()."', '".md5($treballador->getPassword())."');";	
 		$con = new class_db();
 		$con->consulta($query, $GLOBALS['bd']);
 		$con->close();

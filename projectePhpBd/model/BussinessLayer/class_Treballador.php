@@ -15,6 +15,7 @@
 		----------------------------------
 		*/
 
+		private $codiTreballador = null;
 		private $NIF = null;
 		private $nom = null;
 		private $cognom = null;
@@ -27,6 +28,13 @@
 			$this->cognom=$cognom;
 			$this->tipusTreballador=$tipusTreballador;
 			$this->usuari=$usuari;
+		}
+		public function getCodiTreballador(){
+			return $this->codiTreballador;
+		}
+
+		public function setCodiTreballador($codiTreballador){
+			$this->codiTreballador = $codiTreballador;
 		}
 
 		public function getNIF(){
