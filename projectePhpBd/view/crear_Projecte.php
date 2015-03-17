@@ -40,8 +40,8 @@
       //include "../controller/funcio_ExtreureAccio .php";
 
       $fitxer = basename($_SERVER['PHP_SELF']);
-	  $pieces = explode( "_", $fitxer);  // 2012 substitució de la funció obsoleta split per explode
-	  $accio = $pieces[0];
+	    $pieces = explode( "_", $fitxer);  // 2012 substitució de la funció obsoleta split per explode
+	    $accio = $pieces[0];
 	  //echo $accio;
 
       if(comprovarSessio()){
@@ -82,7 +82,7 @@
            <li class="mt">
             <a href="menuAdministrador.php" onClick="return avisar('<?php echo $accio; ?>');">
               <i class="fa fa-dashboard"></i>
-              <span>Panell de control</span>
+              <span>Panel de control</span>
             </a>
           </li>
 
@@ -92,28 +92,28 @@
               <span>Tasques</span>
             </a>
             <ul class="sub">
-              <li><a  href="crearTasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tasca</a></li>
+              <li><a  href="crear_Tasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tasca</a></li>
               <li><a  href="buttons.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Tasca</a></li>
-              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');">Agregar Tasca</a></li>
-              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');">Agregar Tasca</a></li>
-              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');" >Agregar Tasca</a></li>
+              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');">Assignar Tasca</a></li>
+              <li><a  href="crear_TipusTasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tipus Tasca</a></li>
+              <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');" >Modificar Tipus Tasca</a></li>
             </ul>
           </li>
 
           <li class="sub-menu">
-            <a href="javascript:;" >
+            <a class="active" href="javascript:;" >
               <i class="fa fa-cogs"></i>
               <span>Projectes</span>
             </a>
             <ul class="sub">
-              <li><a  href="crearProjecte.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Projecte</a></li>
+              <li><a  href="crear_Projecte.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Projecte</a></li>
               <li><a  href="gallery.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Projecte</a></li>
-              <li><a  href="crearEntorn.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Entotrn </a></li>
-              <li><a  href="todo_list.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Entotrn </a></li>
+              <li><a  href="crear_Entorn.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Entorn </a></li>
+              <li><a  href="todo_list.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Entorn </a></li>
             </ul>
           </li>
           <li class="sub-menu">
-            <a class="active" href="javascript:;" >
+            <a href="javascript:;" >
               <i class="fa fa-book"></i>
               <span>Usuari</span>
             </a>
@@ -140,7 +140,7 @@
             <form name="form" method="post" action="../controller/controllerCrearProjecte.php"/>
               Descripcio curta <input type="text" name="descCurta" required/><br/>
               Descripcio llarga <textarea name="descLlarga" rows="5" cols="20" required></textarea><br/>
-              Entorn : 
+              Entorn: 
             <select name="entornId">
               <?php
               foreach ($entorn as $value) {                       
@@ -158,7 +158,7 @@
         </div>
       </div>
 
-    </section><! --/wrapper -->
+    </section><!--/wrapper -->
   </section><!-- /MAIN CONTENT -->
 
   <!--main content end-->

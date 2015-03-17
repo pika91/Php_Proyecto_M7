@@ -20,14 +20,14 @@
 		private $nom = null;
 		private $cognom = null;
 		private $tipusTreballador = null;
-		private $usuari = null;
+		private $idUsuari = null;
 
-		public function __construct($NIF, $nom, $cognom, $tipusTreballador, $usuari) {
+		public function __construct($NIF, $nom, $cognom, $tipusTreballador, $idUsuari) {
 			$this->NIF=$NIF;			
 			$this->nom=$nom;
 			$this->cognom=$cognom;
 			$this->tipusTreballador=$tipusTreballador;
-			$this->usuari=$usuari;
+			$this->idUsuari=$idUsuari;
 		}
 		public function getCodiTreballador(){
 			return $this->codiTreballador;
@@ -69,12 +69,12 @@
 			$this->tipusTreballador = $tipusTreballador;
 		}
 
-		public function getUsuari(){
-			return $this->usuari;
+		public function getIdUsuari(){
+			return $this->idUsuari;
 		}
 
-		public function setUsuari($usuari){
-			$this->usuari= $usuari;
+		public function setIdUsuari($idUsuari){
+			$this->idUsuari= $idUsuari;
 		}
 
 		public function afegirTreballador() {

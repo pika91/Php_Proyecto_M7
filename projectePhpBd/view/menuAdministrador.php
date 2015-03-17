@@ -67,9 +67,9 @@
            <h5 class="centered">Administrador</h5>
 
            <li class="mt">
-            <a href="menuAdministrador.php">
+            <a class="active" href="menuAdministrador.php">
               <i class="fa fa-dashboard"></i>
-              <span>Panell de control</span>
+              <span>Panel de control</span>
             </a>
           </li>
 
@@ -82,7 +82,7 @@
               <li><a  href="crear_Tasca.php">Crear Tasca</a></li>
               <li><a  href="buttons.html">Modificar Tasca</a></li>
               <li><a  href="panels.html">Assignar Tasca</a></li>
-              <li><a  href="panels.html">Crear Tipus Tasca</a></li>
+              <li><a  href="crear_TipusTasca.php">Crear Tipus Tasca</a></li>
               <li><a  href="panels.html">Modificar Tipus Tasca</a></li>
             </ul>
           </li>
@@ -100,7 +100,7 @@
             </ul>
           </li>
           <li class="sub-menu">
-            <a class="active" href="javascript:;" >
+            <a href="javascript:;" >
               <i class="fa fa-book"></i>
               <span>Usuari</span>
             </a>
@@ -171,7 +171,7 @@
           </div>
         </div>
 
-      </section><! --/wrapper -->
+      </section><!--/wrapper -->
     </section><!-- /MAIN CONTENT -->
 
     <!--main content end-->

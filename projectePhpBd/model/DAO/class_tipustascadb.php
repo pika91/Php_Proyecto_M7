@@ -6,7 +6,7 @@ class tipustascadb{
 
 	public function inserir($tipustasca) {		
 	
-		$query="insert into tipustasca values('', '".$tipustasca->getCodiTipusTasca()."', '".$tipustasca->getDescripcioTipusTasca()."');";				
+		$query="insert into tipustasca values('', '".$tipustasca->getDescripcioTipusTasca()."');";				
 		$con = new class_db();
 		$con->consulta($query, $GLOBALS['bd']);
 		$con->close();

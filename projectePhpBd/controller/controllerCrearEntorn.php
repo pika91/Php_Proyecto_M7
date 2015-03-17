@@ -17,7 +17,7 @@
         
         } else {
 			$nouEntorn->inserirEntorn($codiEntorn,$descripcioEntorn);
-			$_SESSION['empresa'] = serialize($novaTasca);
+			$_SESSION['empresa'] = serialize($nouEntorn);
         	header('Location: ../view/tascaAfegidaCorrecte.html');
         }
 	}

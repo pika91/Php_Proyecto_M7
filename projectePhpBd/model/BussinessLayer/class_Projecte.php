@@ -11,13 +11,13 @@ require_once("../model/DAO/class_projectedb.php");
 		private $codiProjecte = null;
 		private $descripcioCurta = null;
 		private $descripcioLlarga = null;
-		private $entornProjecte = null;
+		private $entorn = null;
 
-		public function __construct($codiProjecte, $descripcioCurta, $descripcioLlarga, $entornProjecte) {
+		public function __construct($codiProjecte, $descripcioCurta, $descripcioLlarga, $entorn) {
 			$this->codiProjecte=$codiProjecte;
 			$this->descripcioCurta=$descripcioCurta;
 			$this->descripcioLlarga=$descripcioLlarga;
-			$this->entorn=$entornProjecte;
+			$this->entorn=$entorn;
 		}
 
 		public function getCodiProjecte(){
@@ -48,8 +48,8 @@ require_once("../model/DAO/class_projectedb.php");
 			return $this->entorn;
 		}
 
-		public function setEntorn($entornProjecte){
-			$this->entorn = $entornProjecte;
+		public function setEntorn($entorn){
+			$this->entorn = $entorn;
 		}
 		
 		public function afegirProjecte(){		

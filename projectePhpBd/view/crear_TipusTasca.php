@@ -26,14 +26,15 @@
     </head>
 
     <body>
+
       <?php
       session_start();
-
       include "../controller/comprovarSessio.php";
 
       $fitxer = basename($_SERVER['PHP_SELF']);
       $pieces = explode( "_", $fitxer);  // 2012 substitució de la funció obsoleta split per explode
       $accio = $pieces[0];
+
       if(comprovarSessio()){
         ?>
 
@@ -77,12 +78,12 @@
           </li>
 
           <li class="sub-menu">
-            <a href="javascript:;" >
+            <a class="active" href="javascript:;" >
               <i class="fa fa-desktop"></i>
               <span>Tasques</span>
             </a>
             <ul class="sub">
-              <li><a  href="crear_Tasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tasca</a></li>
+              <li><a  href="crear:Tasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tasca</a></li>
               <li><a  href="buttons.html" onClick="return avisar('<?php echo $accio; ?>');">Modificar Tasca</a></li>
               <li><a  href="panels.html" onClick="return avisar('<?php echo $accio; ?>');">Assignar Tasca</a></li>
               <li><a  href="crear_TipusTasca.php" onClick="return avisar('<?php echo $accio; ?>');">Crear Tipus Tasca</a></li>
@@ -91,7 +92,7 @@
           </li>
 
           <li class="sub-menu">
-            <a class="active" href="javascript:;" >
+            <a href="javascript:;" >
               <i class="fa fa-cogs"></i>
               <span>Projectes</span>
             </a>
@@ -123,14 +124,13 @@
       <!--main content start-->
       <section id="main-content">
         <section class="wrapper site-min-height">
-         <h3><i class="fa fa-angle-right"></i> Crear nou Entorn</h3>
+         <h3><i class="fa fa-angle-right"></i> Crear nou Tipus Tasca</h3>
          <div class="row mt">
           <div class="col-lg-12">
-            <form name="form" method="post" action="../controller/controllerCrearEntorn.php"/>
-               Descripcio :  <input type="text" name="desc" required/><br/>
-            <input type="submit" value="Crear Entorn" name="crearEntorn"/>
+            <form name="form" method="post" action="../controller/controllerCrearTipusTasca.php"/>
+               Descripcio :  <input type="text" name="desc" required/><br/>   
+               <input type="submit" value="Crear Tipus Tasca" name="crearTipusTasca"/>
           </form>
-
         </div>
       </div>
 
@@ -176,10 +176,6 @@
     <!-- Si no te acces a la pagina el redirigim -->
     <?php
     
-  } else {
-
-    header('Location: ./error/accessDenegat.html');
-
   }
   ?>
 

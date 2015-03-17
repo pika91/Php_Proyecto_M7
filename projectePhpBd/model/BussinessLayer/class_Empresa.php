@@ -135,7 +135,8 @@ class Empresa {
 
 		public function inserirTipusTasca($codiTipusTasca, $descripcioTipusTasca) {
 			$tipusTasca = new TipusTasca($codiTipusTasca, $descripcioTipusTasca);
-			array_push($this->tipusTasca, $tipusTasca);
+			$tipusTasca->afegirTipusTasca();
+			//array_push($this->tipusTasca, $tipusTasca);
 		}
 
 		public function inserirEntorn($codiEntorn, $descripcioEntorn) {
