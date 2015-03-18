@@ -117,8 +117,8 @@ class Empresa {
 			$this->entornProjecte = $entornProjecte;
 		}
 
-		public function inserirProjecte($descripcioCurta, $descripcioLlarga, $entornProjecte) {
-			$projecte = new Projecte($descripcioCurta, $descripcioLlarga, $entornProjecte);
+		public function inserirProjecte($codiProjecte, $descripcioCurta, $descripcioLlarga, $entornProjecte) {
+			$projecte = new Projecte($codiProjecte, $descripcioCurta, $descripcioLlarga, $entornProjecte);
 			//array_push($this->projecte, $projecte);
 			$projecte->afegirProjecte();
 		}
@@ -134,14 +134,14 @@ class Empresa {
 			//array_push($this->tasca, $tasca);
 		}
 
-		public function inserirTipusTasca($descripcioTipusTasca) {
-			$tipusTasca = new TipusTasca($descripcioTipusTasca);
+		public function inserirTipusTasca($codiTipusTasca, $descripcioTipusTasca) {
+			$tipusTasca = new TipusTasca($codiTipusTasca, $descripcioTipusTasca);
 			$tipusTasca->afegirTipusTasca();
 			//array_push($this->tipusTasca, $tipusTasca);
 		}
 
-		public function inserirEntorn($descripcioEntorn) {
-			$entorn = new Entorn($descripcioEntorn);
+		public function inserirEntorn($codiEntorn, $descripcioEntorn) {
+			$entorn = new Entorn($codiEntorn, $descripcioEntorn);
 			//array_push($this->entornProjecte, $entorn);
 			$entorn->afegirEntorn();
 		}

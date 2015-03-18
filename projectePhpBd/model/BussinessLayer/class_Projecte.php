@@ -13,7 +13,7 @@ require_once("../model/DAO/class_projectedb.php");
 		private $descripcioLlarga = null;
 		private $entorn = null;
 
-		public function __construct($descripcioCurta, $descripcioLlarga, $entorn) {
+		public function __construct($codiProjecte, $descripcioCurta, $descripcioLlarga, $entorn) {
 			$this->codiProjecte=$codiProjecte;
 			$this->descripcioCurta=$descripcioCurta;
 			$this->descripcioLlarga=$descripcioLlarga;

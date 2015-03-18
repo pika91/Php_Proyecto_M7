@@ -10,7 +10,7 @@ require_once("../model/DAO/class_entorndb.php");
 		private $codiEntorn = null;
 		private $descripcioEntorn = null;
 
-		public function __construct($descripcioEntorn) {
+		public function __construct($codiEntorn, $descripcioEntorn) {
 			$this->codiEntorn=$codiEntorn;
 			$this->descripcioEntorn=$descripcioEntorn;
 		}

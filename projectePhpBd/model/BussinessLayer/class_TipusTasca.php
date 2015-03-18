@@ -11,7 +11,7 @@ require_once("../model/DAO/class_tipustascadb.php");
 		private $codiTipusTasca = null;
 		private $descripcioTipusTasca = null;
 
-		public function __construct($descripcioTipusTasca) {
+		public function __construct($codiTipusTasca, $descripcioTipusTasca) {
 			$this->codiTipusTasca=$codiTipusTasca;
 			$this->descripcioTipusTasca=$descripcioTipusTasca;
 		}
