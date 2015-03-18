@@ -38,81 +38,11 @@
       <!-- **********************************************************************************************************************************************************
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
-      <header class="header black-bg">
-        <div class="sidebar-toggle-box">
-          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-        </div>
-        <!--logo start-->
-        <a href="menuAdministrador.php" class="logo"><b>GESTIO DE PROJECTES</b></a>
-        <!--logo end-->
-        <div class="top-menu">
-         <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="logout.php">Logout</a></li>
-        </ul>
-      </div>
-    </header>
-    <!--header end-->
-
+      <?php include "topBar.html"; ?>
       <!-- **********************************************************************************************************************************************************
       MAIN SIDEBAR MENU
       *********************************************************************************************************************************************************** -->
-      <!--sidebar start-->
-      <aside>
-        <div id="sidebar"  class="nav-collapse ">
-          <!-- sidebar menu start-->
-          <ul class="sidebar-menu" id="nav-accordion">
-
-           <p class="centered"><a href="profile.html"><img src="assets/img/logo_projecte.png" class="img-circle" width="60"></a></p>
-           <h5 class="centered">Administrador</h5>
-
-           <li class="mt">
-            <a class="active" href="menuAdministrador.php">
-              <i class="fa fa-dashboard"></i>
-              <span>Panel de control</span>
-            </a>
-          </li>
-
-          <li class="sub-menu">
-            <a href="javascript:;" >
-              <i class="fa fa-desktop"></i>
-              <span>Tasques</span>
-            </a>
-            <ul class="sub">
-              <li><a  href="crear_Tasca.php">Crear Tasca</a></li>
-              <li><a  href="buttons.html">Modificar Tasca</a></li>
-              <li><a  href="panels.html">Assignar Tasca</a></li>
-              <li><a  href="crear_TipusTasca.php">Crear Tipus Tasca</a></li>
-              <li><a  href="panels.html">Modificar Tipus Tasca</a></li>
-            </ul>
-          </li>
-
-          <li class="sub-menu">
-            <a href="javascript:;" >
-              <i class="fa fa-cogs"></i>
-              <span>Projectes</span>
-            </a>
-            <ul class="sub">
-              <li><a  href="crear_Projecte.php">Crear Projecte</a></li>
-              <li><a  href="gallery.html">Modificar Projecte</a></li>
-              <li><a  href="crear_Entorn.php">Crear Entorn </a></li>
-              <li><a  href="todo_list.html">Modificar Entorn </a></li>
-            </ul>
-          </li>
-          <li class="sub-menu">
-            <a href="javascript:;" >
-              <i class="fa fa-book"></i>
-              <span>Usuari</span>
-            </a>
-            <ul class="sub">
-              <li><a  href="logout.php">Logout</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- sidebar menu end-->
-      </div>
-    </aside>
-    <!--sidebar end-->
+      <?php include "aside.html"; ?>
 
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
