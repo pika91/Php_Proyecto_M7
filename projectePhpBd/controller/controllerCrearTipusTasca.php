@@ -16,7 +16,7 @@
         	header('Location: ../view/error/crearTascaError2.html');
         
         } else {
-			$nouTipusTasca->inserirTipusTasca($codiTipusTasca,$descripcioTipusTasca);
+			$nouTipusTasca->inserirTipusTasca($descripcioTipusTasca);
 			$_SESSION['empresa'] = serialize($nouTipusTasca);
         	header('Location: ../view/tipusTascaAfegitCorrecte.html');
         }

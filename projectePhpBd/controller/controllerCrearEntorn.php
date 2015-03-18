@@ -16,7 +16,7 @@
         	header('Location: ../view/error/crearTascaError2.html');
         
         } else {
-			$nouEntorn->inserirEntorn($codiEntorn,$descripcioEntorn);
+			$nouEntorn->inserirEntorn($descripcioEntorn);
 			$_SESSION['empresa'] = serialize($nouEntorn);
         	header('Location: ../view/tascaAfegidaCorrecte.html');
         }
