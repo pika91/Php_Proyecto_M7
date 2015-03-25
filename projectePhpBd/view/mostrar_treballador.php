@@ -63,7 +63,7 @@
       						extract($params);
       						$id = $record['id'];
 
-      						return "<a href=\"edit_user.php?id=$id\">$label</a>";
+      						return "<a href=\"modificar_projecte.php?id=$id\">$label</a>";
       					}
       				}
 
