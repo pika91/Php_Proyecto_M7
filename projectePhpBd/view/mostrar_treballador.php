@@ -31,9 +31,10 @@
 
   	include "../controller/comprovarSessio.php";
   	include "../model/BussinessLayer/class_Empresa.php";
+    //include "../config/populate.inc.php";
   	include "../model/BussinessLayer/class_Projecte.php";
   	require_once('Structures/DataGrid.php');
-  	if(true){
+  	if(comprovarSessio()){
   		?>
 
   		<section id="container" >
@@ -52,7 +53,7 @@
       <!--main content start-->
       <section id="main-content">
       	<section class="wrapper site-min-height">
-      		<h3><i class="fa fa-angle-right"></i> Benvingut</h3>
+      		<h3><i class="fa fa-angle-right"></i> Modificar Projectes</h3>
       		<div class="row mt">
       			<div class="col-lg-12">
       			<?php
