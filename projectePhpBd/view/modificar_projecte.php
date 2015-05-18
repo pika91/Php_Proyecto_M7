@@ -31,16 +31,9 @@
 
   	include "../controller/comprovarSessio.php";
   	include "../model/BussinessLayer/class_Empresa.php";
-    //include "../config/populate.inc.php";
   	include "../model/BussinessLayer/class_Projecte.php";
   	require_once('Structures/DataGrid.php');
-<<<<<<< HEAD
-    require_once('../config/populate.inc.php');
-
   	if(true){
-=======
-  	if(comprovarSessio()){
->>>>>>> origin/NovaBranca
   		?>
 
   		<section id="container" >
@@ -59,70 +52,10 @@
       <!--main content start-->
       <section id="main-content">
       	<section class="wrapper site-min-height">
-<<<<<<< HEAD
-      		<h3><i class="fa fa-angle-right"></i> Data Grid Treballador</h3>
-=======
-      		<h3><i class="fa fa-angle-right"></i> Modificar Projectes</h3>
->>>>>>> origin/NovaBranca
+      		<h3><i class="fa fa-angle-right"></i> Benvingut</h3>
       		<div class="row mt">
       			<div class="col-lg-12">
-      			<?php
-      				class Printer {
-      					function printLink($params)
-      					{
-      						extract($params);
-      						$id = $record['id'];
-
-      						return "<a href=\"modificar_projecte.php?id=$id\">$label</a>";
-      					}
-      				}
-
-      				$empresa = unserialize($_SESSION['empresa']);
-      				$projectos = $empresa->getProjecte();
-      				$rs;
-
-      				foreach ($projectos as $value) {
-      					$projecto = array('id'=>$value->getCodiProjecte(),'first_name'=>$value->getDescripcioCurta(),'last_name' =>$value->getDescripcioLlarga(),'age' =>$value->getEntorn());
-      					$rs[]= $projecto;
-      				}
-
-					// Define New DataGrid with a limit 
-      				$dg =& new Structures_DataGrid(5);
-
-					// Define DataGrid Color Attributes
-      				$dg->renderer->setTableHeaderAttributes(array('bgcolor' => '#3399FF'));
-      				$dg->renderer->setTableOddRowAttributes(array('bgcolor' => '#CCCCCC'));
-      				$dg->renderer->setTableEvenRowAttributes(array('bgcolor' => '#EEEEEE'));
-
-					// Define DataGrid Table Attributes
-      				$dg->renderer->setTableAttribute('width', '50%');
-      				$dg->renderer->setTableAttribute('cellspacing', '1');
-      				$dg->renderer->setTableAttribute('cellpadding', '4');
-      				$dg->renderer->setTableAttribute('class', 'datagrid');
-
-      				$dg->renderer->sortIconASC = "&uArr;";
-      				$dg->renderer->sortIconDESC = "&dArr;";
-
-					// Set empty row table attributes
-      				$dg->renderer->allowEmptyRows(true, array('bgcolor' => '#FFFFFF'));
-
-					// Define columns for the DataGrid
-      				$column = new Structures_DataGrid_Column('Descripcio Curta', 'first_name', 'first_name', array('width' => '75%'));
-      				$dg->addColumn($column);
-      				$column = new Structures_DataGrid_Column('Id Entorn', 'age', 'age', array('width' => '25%'));
-      				$dg->addColumn($column);
-      				$column = new Structures_DataGrid_Column('Edit', null, null, array('align' => 'center'), null, 'Printer::printLink($label=Edit)');
-      				$dg->addColumn($column);
-      				$column = new Structures_DataGrid_Column('Delete', null, null, array('align' => 'center'));
-      				$dg->addColumn($column);
-
-					// Option #3 Bind directly to any data type
-      				$dg->bind($rs);
-
-					// Print the DataGrid
-      				$dg->render();
-      				echo $dg->renderer->getPaging();
-      				?>
+      			
       			</div>
       		</div>
 
@@ -159,9 +92,6 @@
       <script>
       //custom select box
 
-      $(function(){
-      	$('select.styled').customSelect();
-      });
 
   </script>
   <!-- Si no te acces a la pagina el redirigim -->
