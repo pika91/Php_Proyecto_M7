@@ -33,6 +33,8 @@
   	include "../model/BussinessLayer/class_Empresa.php";
   	include "../model/BussinessLayer/class_Projecte.php";
   	require_once('Structures/DataGrid.php');
+    require_once('../config/populate.inc.php');
+
   	if(true){
   		?>
 
@@ -52,7 +54,7 @@
       <!--main content start-->
       <section id="main-content">
       	<section class="wrapper site-min-height">
-      		<h3><i class="fa fa-angle-right"></i> Benvingut</h3>
+      		<h3><i class="fa fa-angle-right"></i> Data Grid Treballador</h3>
       		<div class="row mt">
       			<div class="col-lg-12">
       			<?php
